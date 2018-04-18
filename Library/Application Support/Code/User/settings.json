@@ -1,12 +1,25 @@
 {
-  "atomKeymap.promptV3Features": true,
-  "editor.multiCursorModifier": "ctrlCmd",
-  "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
-  "workbench.startupEditor": "newUntitledFile",
-  "editor.rulers": [80],
-  "window.zoomLevel": 0,
-  "editor.tabSize": 2,
-  "editor.insertSpaces": true,
-  "editor.detectIndentation": false
+    "atomKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "explorer.confirmDragAndDrop": false,
+    "editor.rulers": [
+        80
+    ],
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true
+    },
+    "window.zoomLevel": 0
 }
