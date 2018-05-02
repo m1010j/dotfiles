@@ -9,9 +9,6 @@
   "workbench.startupEditor": "newUntitledFile",
   "explorer.confirmDragAndDrop": false,
   "editor.rulers": [80],
-  "editor.codeActionsOnSave": {
-    "source.organizeImports": true
-  },
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
     "suppressCommitNotFoundWarning": false,
@@ -22,5 +19,8 @@
     "suppressResultsExplorerNotice": false,
     "suppressShowKeyBindingsNotice": true
   },
-  "window.zoomLevel": 0
+  "window.zoomLevel": 0,
+  "ruby.rubocop.executePath": "",
+  "ruby.rubocop.configFilePath": "/.rubocop.yml",
+  "ruby.rubocop.onSave": true
 }
