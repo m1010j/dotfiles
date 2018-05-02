@@ -19,8 +19,5 @@
     "suppressResultsExplorerNotice": false,
     "suppressShowKeyBindingsNotice": true
   },
-  "window.zoomLevel": 0,
-  "ruby.rubocop.executePath": "",
-  "ruby.rubocop.configFilePath": "/.rubocop.yml",
-  "ruby.rubocop.onSave": true
+  "window.zoomLevel": 0
 }
