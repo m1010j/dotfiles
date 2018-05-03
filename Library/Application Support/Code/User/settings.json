@@ -19,5 +19,21 @@
     "suppressResultsExplorerNotice": false,
     "suppressShowKeyBindingsNotice": true
   },
-  "window.zoomLevel": 0
+  "window.zoomLevel": 0,
+  "ruby.lint": {
+    "reek": true,
+    "rubocop": {
+      "only": ["SpaceInsideBlockBraces", "LeadingCommentSpace"],
+      "lint": true,
+      "rails": true
+    },
+    "ruby": {
+      "unicode": true //Runs ruby -wc -Ku
+    },
+    "fasterer": true,
+    "debride": true,
+    "ruby-lint": true
+  },
+  "ruby.lintDebounceTime": 500,
+  "ruby.codeCompletion": "rcodetools"
 }
