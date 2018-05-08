@@ -1,12 +1,39 @@
 {
   "atomKeymap.promptV3Features": true,
   "editor.multiCursorModifier": "ctrlCmd",
-  "editor.formatOnPaste": true,
+  "editor.formatOnPaste": false,
   "editor.formatOnSave": true,
-  "workbench.startupEditor": "newUntitledFile",
-  "editor.rulers": [80],
-  "window.zoomLevel": 0,
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
-  "editor.detectIndentation": false
+  "editor.detectIndentation": false,
+  "workbench.startupEditor": "newUntitledFile",
+  "explorer.confirmDragAndDrop": false,
+  "editor.rulers": [80],
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true
+  },
+  "window.zoomLevel": 0,
+  "ruby.lint": {
+    "reek": true,
+    "rubocop": {
+      "only": ["SpaceInsideBlockBraces", "LeadingCommentSpace"],
+      "lint": true,
+      "rails": true
+    },
+    "ruby": {
+      "unicode": true //Runs ruby -wc -Ku
+    },
+    "fasterer": true,
+    "debride": true,
+    "ruby-lint": true
+  },
+  "ruby.lintDebounceTime": 500,
+  "ruby.codeCompletion": "rcodetools"
 }
