@@ -1,3 +1,5 @@
+#!/bin/bash
+
 alias ..='cd ..'
 alias b='bundle'
 alias bi='bundle install'
