@@ -148,3 +148,4 @@ export NVM_DIR="$HOME/.nvm"
 
 # load any local configuration
 eval "$(rbenv init -)"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
