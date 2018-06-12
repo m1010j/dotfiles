@@ -125,9 +125,6 @@ source "$HOME/.git-prompt.sh"
 
 ### ENV variables ###
 
-# look for commands in these places
-export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
-
 # make vim the default text editor
 export EDITOR="vim"
 
