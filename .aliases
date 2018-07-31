@@ -41,9 +41,11 @@ alias nd='npm run dev'
 alias w='webpack'
 alias ww='webpack --watch'
 alias yi='yarn install'
+alias ya='yarn add'
+alias yad='yarn add --dev'
 alias ys='yarn start'
 alias yr='yarn run'
-alias yd='yarn run dev'
+alias yd='yarn run --dev'
 alias yw='yarn run webpack'
 
 # safer destructive commands
