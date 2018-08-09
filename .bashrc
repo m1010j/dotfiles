@@ -138,7 +138,7 @@ fi
 ### ENV variables ###
 
 # make vim the default text editor
-export EDITOR="code"
+export EDITOR="code --wait"
 
 # shortened prompt that includes git branch info
 RED='\[\e[0;31m\]'
