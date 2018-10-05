@@ -47,6 +47,7 @@ alias ys='yarn start'
 alias yr='yarn run'
 alias yd='yarn run dev'
 alias yw='yarn run webpack'
+alias clip-pipe='xclip -selection clipboard -o'
 
 # safer destructive commands
 alias cp='cp -i'
