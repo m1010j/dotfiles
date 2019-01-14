@@ -123,21 +123,9 @@ fi
 source "$HOME/.git-completion.bash"
 source "$HOME/.git-prompt.sh"
 
-# Git branch bash completion
-if [ -f ~/.git-completion.bash ]; then
-  . ~/.git-completion.bash
-  
-  # Add git completion to aliases
-  __git_complete gd __git_diff
-  __git_complete gco _git_checkout
-  __git_complete gm __git_merge
-  __git_complete gpl _git_pull
-  __git_complete gps _git_push
-fi
-
 ### ENV variables ###
 
-# make vim the default text editor
+# make VS Code the default text editor
 export EDITOR="code --wait"
 
 # shortened prompt that includes git branch info
