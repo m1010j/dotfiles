@@ -1,6 +1,7 @@
 #!/bin/bash
 
 alias ..='cd ..'
+alias activate='source env/bin/activate'
 alias b='bundle'
 alias bi='bundle install'
 alias be='bundle exec'
