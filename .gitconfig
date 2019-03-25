@@ -1,0 +1,25 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Matthias Jenny
+	email = matthiascjenny@gmail.com
+  username = m1010j
+[alias]
+	f = fetch
+	cl = clone
+	lo = log
+	d = diff
+	b = branch
+	co = checkout
+	cob = !git checkout -b
+	s = status
+	sh = stash
+	sha = !git stash apply
+	a = add
+	c = commit
+	cm = !git commit -m
+	rbm = !git rebase master
+	rbom = !git rebase origin/master
+	pl = pull
+	ps = push
+	com = !git checkout master

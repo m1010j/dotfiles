@@ -1,5 +1,0 @@
-_xfunc git __git_complete gco _git_checkout
-_xfunc git __git_complete gps _git_push
-_xfunc git __git_complete gd _git_diff
-_xfunc git __git_complete gm _git_merge
-_xfunc git __git_complete gpl _git_pull
