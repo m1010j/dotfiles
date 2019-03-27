@@ -7,7 +7,7 @@
 [alias]
 	f = fetch
 	cl = clone
-	lo = log
+	l = log
 	d = diff
 	b = branch
 	co = checkout
