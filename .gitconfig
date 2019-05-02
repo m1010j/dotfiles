@@ -23,3 +23,5 @@
 	pl = pull
 	ps = push
 	com = !git checkout master
+  prl = !hub pr list
+  prco = !hub pr checkout
