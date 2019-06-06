@@ -8,17 +8,17 @@ cmd + alt - s : chunkc tiling::desktop --layout monocle
 # kill focused window
 cmd + shift + alt - q : chunkc tiling::window --close
 # change focus
-cmd + alt - left : chunkc tiling::window --focus west
-cmd + alt - down : chunkc tiling::window --focus south
-cmd + alt - up : chunkc tiling::window --focus north
-cmd + alt - right : chunkc tiling::window --focus east
+cmd + alt - h : chunkc tiling::window --focus west
+cmd + alt - j : chunkc tiling::window --focus south
+cmd + alt - k : chunkc tiling::window --focus north
+cmd + alt - l : chunkc tiling::window --focus east
 cmd + alt - p : chunkc tiling::window --focus prev
 cmd + alt - n : chunkc tiling::window --focus next
 # move focused window
-cmd + shift + alt - left : chunkc tiling::window --warp west
-cmd + shift + alt - down : chunkc tiling::window --warp south
-cmd + shift + alt - up : chunkc tiling::window --warp north
-cmd + shift + alt - right : chunkc tiling::window --warp east
+cmd + shift + alt - h : chunkc tiling::window --warp west
+cmd + shift + alt - j : chunkc tiling::window --warp south
+cmd + shift + alt - k : chunkc tiling::window --warp north
+cmd + shift + alt - l : chunkc tiling::window --warp east
 cmd + alt - r : chunkc tiling::desktop --rotate 90
 # move focused container to workspace
 cmd + shift + alt - m : chunkc tiling::window --send-to-desktop $(chunkc get _last_active_desktop)

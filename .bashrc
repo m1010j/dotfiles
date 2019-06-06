@@ -125,8 +125,8 @@ source "$HOME/.git-prompt.sh"
 
 ### ENV variables ###
 
-# make VS Code the default text editor
-export EDITOR="code --wait"
+# make vim the default text editor
+export EDITOR="vi"
 
 # shortened prompt that includes git branch info
 RED='\[\e[0;31m\]'
@@ -157,3 +157,5 @@ export PATH
 export VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.7/bin/python3
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
+
+set -o vi
