@@ -126,7 +126,7 @@ source "$HOME/.git-prompt.sh"
 ### ENV variables ###
 
 # make vim the default text editor
-export EDITOR="vi"
+export EDITOR="vim"
 
 # shortened prompt that includes git branch info
 RED='\[\e[0;31m\]'
