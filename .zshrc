@@ -2,7 +2,12 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/matthiasjenny/.oh-my-zsh"
+unameOut="$(uname -s)"
+case "${unameOut}" in
+	Linux*)     export ZSH="/home/matthias/.oh-my-zsh";;
+	Darwin*)     export ZSH="/Users/matthiasjenny/.oh-my-zsh";;
+	*)     echo "This only works on Linux or Mac"
+esac
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -108,15 +113,9 @@ eval "$(rbenv init -)"
 
 eval "$(hub alias -s)"
 
-# Setting PATH for Python 3.7
-# The original version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
-export PATH
+case "${unameOut}" in
+	Darwin*)     PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}" && export PATH && export VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.7/bin/python3 && export WORKON_HOME=$HOME/.virtualenvs && source /usr/local/bin/virtualenvwrapper.sh && workon loanstreet-next;;
+esac
 
-export VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.7/bin/python3
-export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
+
 unset LESS;
-
-workon loanstreet-next
-
