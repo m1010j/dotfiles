@@ -5,7 +5,7 @@
 unameOut="$(uname -s)"
 case "${unameOut}" in
 	Linux*)     export ZSH="/home/matthias/.oh-my-zsh";;
-	Darwin*)     export ZSH="/Users/matthiasjenny/.oh-my-zsh";;
+	Darwin*)     export ZSH="/Users/matthiasjenny1/.oh-my-zsh";;
 	*)     echo "This only works on Linux or Mac"
 esac
 
@@ -114,7 +114,7 @@ eval "$(rbenv init -)"
 eval "$(hub alias -s)"
 
 case "${unameOut}" in
-	Darwin*)     PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}" && export PATH && export VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.7/bin/python3 && export WORKON_HOME=$HOME/.virtualenvs && source /usr/local/bin/virtualenvwrapper.sh && workon loanstreet-next;;
+	Darwin*)     PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}" && export PATH && export VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.7/bin/python3 && export WORKON_HOME=$HOME/.virtualenvs && source /Library/Frameworks/Python.framework/Versions/3.7/bin/virtualenvwrapper.sh && workon evenfinancial;;
 esac
 
 

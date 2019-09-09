@@ -3,7 +3,7 @@
 # Please adapt and uncomment the following lines:
 	name = Matthias Jenny
 	email = matthiascjenny@gmail.com
-  username = m1010j
+	username = m1010j
 [alias]
 	f = fetch
 	cl = clone
