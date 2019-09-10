@@ -113,9 +113,4 @@ eval "$(rbenv init -)"
 
 eval "$(hub alias -s)"
 
-case "${unameOut}" in
-	Darwin*)     PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}" && export PATH && export VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.7/bin/python3 && export WORKON_HOME=$HOME/.virtualenvs && source /Library/Frameworks/Python.framework/Versions/3.7/bin/virtualenvwrapper.sh && workon evenfinancial;;
-esac
-
-
 unset LESS;
