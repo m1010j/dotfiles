@@ -114,3 +114,9 @@ eval "$(rbenv init -)"
 eval "$(hub alias -s)"
 
 unset LESS;
+
+gcogrep() {
+  git checkout $(git branch | grep "$1")
+}
+
+source ~/.secrets

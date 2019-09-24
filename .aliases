@@ -1,5 +1,6 @@
 #! /usr/local/bin/zsh
 
+alias aws-mfa='eval $(~/Even/even-cli/bin/auth-aws-cli)'
 alias activate='source env/bin/activate'
 alias b='bundle'
 alias bi='bundle install'
@@ -36,7 +37,7 @@ alias mc='make clean'
 alias ms='md && mu'
 alias mreset='make down && make clean && make up'
 alias mdebug='docker-compose -f docker-compose-only-backend.yml up'
-alias ni='npm install'
+alias ni='npm install --no-save'
 alias nis='npm install --save'
 alias nisd='npm install --save-dev'
 alias ns='npm start'
