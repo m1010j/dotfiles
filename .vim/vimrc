@@ -134,3 +134,6 @@ let NERDTreeShowHidden=1
 nmap <leader>n :NERDTreeToggle<CR>
 nmap <leader>j :NERDTreeFind<CR>
 let NERDTreeIgnore=['\.DS_Store', '\~$', '\.swp']
+
+" Add fzf to runtimepath
+set rtp+=~/.fzf

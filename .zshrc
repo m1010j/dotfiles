@@ -119,4 +119,9 @@ gcogrep() {
   git checkout $(git branch | grep "$1")
 }
 
-source ~/.secrets
+unameOut="$(uname -s)"
+case "${unameOut}" in
+	Darwin*)     source ~/.secrets;;
+esac
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
