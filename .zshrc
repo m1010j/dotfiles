@@ -125,3 +125,5 @@ case "${unameOut}" in
 esac
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export PATH=$HOME/nvim:$PATH

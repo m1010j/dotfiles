@@ -8,7 +8,10 @@ files.each do |file_or_dir|
   %x[ #{cmd} ]
 end
 
-nested_files = {'.config/karabiner': 'karabiner.json'}
+nested_files = {
+  '.config/karabiner': 'karabiner.json',
+  '.config/nvim': 'init.vim'
+}
 
 nested_files.each do |dir, file|
   cmd = "cp ~/#{dir}/#{file} #{dir}"
