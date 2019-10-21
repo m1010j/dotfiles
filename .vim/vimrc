@@ -52,6 +52,8 @@ call plug#begin()
 
   Plug 'yuttie/comfortable-motion.vim'
 
+  Plug 'mileszs/ack.vim'
+
 call plug#end()
 
 """"" enable 24bit true color
@@ -81,11 +83,6 @@ set colorcolumn=120
 set number
 
 set hidden
-
-" Automatically save the session when leaving Vim
-autocmd! VimLeave * mksession
-" Automatically load the session when entering vim
-autocmd! VimEnter * source ~/Session.vim
 
 " Save 1,000 items in history
 set history=1000
@@ -239,3 +236,9 @@ autocmd FileType html,css,javascript.jsx EmmetInstall
     " \  },
   " \}
 
+" ack.vim config
+cnoreabbrev Ack Ack!
+nnoremap <Leader>a :Ack!<Space>
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
