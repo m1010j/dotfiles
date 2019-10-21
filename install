@@ -10,12 +10,11 @@ end
 
 nested_files = {
   '.config/karabiner': 'karabiner.json',
-  '.config/nvim': 'init.vim',
   '.vim': 'vimrc',
   '.vim/autoload': 'plug.vim'
 }
 
-`mkdir -p ~/.vim/autoload ~/.config/nvim ~/.config/karabiner`
+`mkdir -p ~/.vim/autoload ~/.config/karabiner`
 
 nested_files.each do |dir, file|
   cmd = "cp #{dir}/#{file} ~/#{dir}"
@@ -23,7 +22,11 @@ nested_files.each do |dir, file|
 end
 
 # Create symlink for vimrc
-`rm -f ~/.vimrc && ln -s ~/.vim/vimrc ~/.vimrc`
+`rm -rf ~/.config/nvim && mkdir ~/.config/nvim && ln -s ~/.vim/vimrc ~/.config/nvim/init.vim`
+
+# INstall plug-vim
+`curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
 
 # Install requirements for nvim-typescript
 `npm install -g neovim`
