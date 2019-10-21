@@ -182,7 +182,11 @@ nmap <leader>j :NERDTreeFind<CR>
 let NERDTreeIgnore=['\.DS_Store', '\~$', '\.swp']
 
 " Add fzf to runtimepath
-set rtp+=~/.fzf
+if has('macunix')
+  set rtp+=/usr/local/opt/fzf
+elseif has('unix')
+  set rtp+=~/.fzf
+endif
 
 " deoplete config
 let g:deoplete#enable_at_startup = 1
