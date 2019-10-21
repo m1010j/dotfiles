@@ -70,6 +70,9 @@ colorscheme night-owl
 " Enable mouse scrolling
 set mouse=a
 
+" Highlight current line
+set cursorline
+
 " Map 0 to ^ to use 0 to move to first non-blank character
 map 0 ^
 
@@ -78,6 +81,11 @@ set colorcolumn=120
 set number
 
 set hidden
+
+" Automatically save the session when leaving Vim
+autocmd! VimLeave * mksession
+" Automatically load the session when entering vim
+autocmd! VimEnter * source ~/Session.vim
 
 " Save 1,000 items in history
 set history=1000
