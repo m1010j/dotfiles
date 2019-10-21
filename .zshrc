@@ -84,7 +84,7 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-export EDITOR='vim'
+export EDITOR='nvim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -127,3 +127,5 @@ esac
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export PATH=$HOME/nvim:$PATH
+
+export NODE_OPTIONS=--max_old_space_size=4096
