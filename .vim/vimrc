@@ -50,6 +50,8 @@ call plug#begin()
   
   Plug 'HerringtonDarkholme/yats.vim'
 
+  Plug 'yuttie/comfortable-motion.vim'
+
 call plug#end()
 
 """"" enable 24bit true color
