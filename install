@@ -1,13 +1,30 @@
 #!/usr/bin/env ruby
 
 files_and_dirs = Dir.glob("*", File::FNM_DOTMATCH) - %w[. .. install .git 
-  .DS_Store README.md update]
+  .DS_Store README.md update .config .vim]
 
 files_and_dirs.each do |file_or_dir|
   cmd = "cp -r ./#{file_or_dir} ~/"
   %x[ #{cmd} ]
 end
 
+nested_files = {
+  '.config/karabiner': 'karabiner.json',
+  '.config/nvim': 'init.vim',
+  '.vim': 'vimrc',
+  '.vim/autoload': 'plug.vim'
+}
+
+`mkdir -p ~/.vim/autoload ~/.config/nvim ~/.config/karabiner`
+
+nested_files.each do |dir, file|
+  cmd = "cp #{dir}/#{file} ~/#{dir}"
+  %x[ #{cmd} ]
+end
+
 # Create symlink for vimrc
 `rm -f ~/.vimrc && ln -s ~/.vim/vimrc ~/.vimrc`
 
+# Install requirements for nvim-typescript
+`npm install -g neovim`
+`npm -g install typescript`

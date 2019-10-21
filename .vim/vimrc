@@ -2,7 +2,56 @@
 let mapleader=" "
 let maplocalleader=" "
 
-execute pathogen#infect()
+call plug#begin()
+
+  Plug 'dense-analysis/ale'
+
+  Plug 'jiangmiao/auto-pairs'
+
+  Plug 'ternjs/tern_for_vim', {'do': 'npm install'}
+
+  Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
+
+  if has('nvim')
+    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+  else
+    Plug 'Shougo/deoplete.nvim'
+    Plug 'roxma/nvim-yarp'
+    Plug 'roxma/vim-hug-neovim-rpc'
+  endif
+
+  Plug 'itchyny/lightline.vim'
+
+  Plug 'scrooloose/nerdcommenter'
+
+  Plug 'scrooloose/nerdtree'
+
+  Plug 'haishanh/night-owl.vim'
+
+  " nvim-typescript
+  Plug 'HerringtonDarkholme/yats.vim'
+  Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+  " For async completion
+  Plug 'Shougo/deoplete.nvim'
+  " For Denite features
+  Plug 'Shougo/denite.nvim'
+  Plug 'mhartington/nvim-typescript'
+
+  Plug 'mattn/emmet-vim'
+
+  Plug 'leafgarland/typescript-vim'
+
+  Plug 'peitalin/vim-jsx-typescript'
+
+  Plug 'tpope/vim-fugitive'
+
+  Plug 'tpope/vim-rhubarb'
+
+  Plug 'prettier/vim-prettier', { 'do': 'npm install' }
+  
+  Plug 'HerringtonDarkholme/yats.vim'
+
+call plug#end()
 
 """"" enable 24bit true color
 
@@ -15,7 +64,6 @@ endif
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 """"" enable the theme
-syntax enable
 colorscheme night-owl
 
 set colorcolumn=120
@@ -93,8 +141,6 @@ set showmatch
 let g:NERDSpaceDelims = 1
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
-" Enable filetype plugins
-filetype plugin indent on
 
 " Lightline config
 set laststatus=2
@@ -139,7 +185,7 @@ let NERDTreeIgnore=['\.DS_Store', '\~$', '\.swp']
 set rtp+=~/.fzf
 
 " deoplete config
- let g:deoplete#enable_at_startup = 1
+let g:deoplete#enable_at_startup = 1
 "Add extra filetypes
 let g:deoplete#sources#ternjs#filetypes = [
                 \ 'jsx',
