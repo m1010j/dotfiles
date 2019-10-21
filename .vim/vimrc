@@ -35,7 +35,6 @@ call plug#begin()
   Plug 'Shougo/deoplete.nvim'
   " For Denite features
   Plug 'Shougo/denite.nvim'
-  Plug 'mhartington/nvim-typescript'
 
   Plug 'mattn/emmet-vim'
 
@@ -65,6 +64,12 @@ let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 """"" enable the theme
 colorscheme night-owl
+
+" Enable mouse scrolling
+set mouse=a
+
+" Map 0 to ^ to use 0 to move to first non-blank character
+map 0 ^
 
 set colorcolumn=120
 
