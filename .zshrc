@@ -119,7 +119,6 @@ gcogrep() {
   git checkout $(git branch | grep "$1")
 }
 
-unameOut="$(uname -s)"
 case "${unameOut}" in
 	Darwin*)     source ~/.secrets;;
 esac
@@ -129,3 +128,7 @@ esac
 export PATH=$HOME/nvim:$PATH
 
 export NODE_OPTIONS=--max_old_space_size=4096
+case "${unameOut}" in
+	Linux*)    eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+esac
+
