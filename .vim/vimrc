@@ -226,6 +226,7 @@ let g:ale_fixers = {
 \    'html': ['prettier']
 \}
 let g:ale_fix_on_save = 1
+nmap <leader>d :ALEGoToDefinition<CR>
 
 " emmet config
 let g:user_emmet_leader_key='<Tab>'
