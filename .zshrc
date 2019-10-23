@@ -123,7 +123,10 @@ case "${unameOut}" in
 	Darwin*)     source ~/.secrets;;
 esac
 
+# fzf config
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND='ag -g ""'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 export PATH=$HOME/nvim:$PATH
 
