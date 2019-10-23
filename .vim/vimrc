@@ -193,6 +193,8 @@ nmap <leader>n :NERDTreeToggle %<CR>
 nmap <leader>j :NERDTreeFind<CR>
 let NERDTreeIgnore=['\.DS_Store', '\~$', '\.swp']
 
+" fzf config
+nnoremap <Leader>p :FZF<CR>
 " Add fzf to runtimepath
 if has('macunix')
   set rtp+=/usr/local/opt/fzf
