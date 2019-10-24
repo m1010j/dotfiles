@@ -6,8 +6,6 @@ call plug#begin()
 
   Plug 'dense-analysis/ale'
 
-  Plug 'jiangmiao/auto-pairs'
-
   Plug 'ternjs/tern_for_vim', {'do': 'npm install'}
 
   Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
@@ -229,6 +227,7 @@ let g:ale_fixers = {
 \}
 let g:ale_fix_on_save = 1
 nmap <leader>d :ALEGoToDefinition<CR>
+nmap <leader>r :ALEFindReferences<CR>
 
 " emmet config
 let g:user_emmet_leader_key='<Tab>'
