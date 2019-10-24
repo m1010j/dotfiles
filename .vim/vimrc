@@ -52,6 +52,8 @@ call plug#begin()
 
   Plug 'mileszs/ack.vim'
 
+  Plug 'powerman/vim-plugin-autosess'
+
 call plug#end()
 
 """"" enable 24bit true color
@@ -139,6 +141,12 @@ set hlsearch
 " Clear highlighting on escape in normal mode
 nnoremap <esc> :noh<return><esc>
 nnoremap <esc>^[ <esc>^[
+
+" Tabbing shortcuts 
+nnoremap <Leader>t :tabnew<CR>
+nnoremap <Leader>x :tabclose<CR>
+nnoremap <Leader>[ :tabp<CR>
+nnoremap <Leader>] :tabn<CR>
 
 " Move back and forth between two files by pressing the leader key twice
 nnoremap <Leader><Leader> :e#<CR>
