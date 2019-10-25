@@ -144,6 +144,9 @@ set hlsearch
 nnoremap <esc> :noh<return><esc>
 nnoremap <esc>^[ <esc>^[
 
+" Close quickfix and preview windows
+nnoremap <Leader>X :ccl<CR>:pc<CR>
+
 " Search word under cursor with leader-f
 nnoremap <Leader>f #
 
@@ -271,7 +274,6 @@ autocmd FileType html,css,javascript.jsx EmmetInstall
 " ack.vim config
 cnoreabbrev Ack Ack!
 nnoremap <Leader>a :Ack!<Space>
-nnoremap <Leader>A :ccl<CR>
 noremap <Leader>F :Ack <cword><cr>
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
