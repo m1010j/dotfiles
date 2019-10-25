@@ -147,6 +147,10 @@ nnoremap <esc>^[ <esc>^[
 " Search word under cursor with leader-f
 nnoremap <Leader>f #
 
+" Save and quit shortcuts
+nnoremap <Leader>w :w<CR>
+nnoremap <Leader>q :q<CR>
+
 " Tabbing shortcuts 
 nnoremap <Leader>t :tabnew<CR>
 nnoremap <Leader>x :tabclose<CR>
