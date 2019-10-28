@@ -12,7 +12,8 @@ nested_files = {
   '.config/karabiner': 'karabiner.json',
   '.config/nvim': 'init.vim',
   '.vim': 'vimrc',
-  '.vim/autoload': 'plug.vim'
+  '.vim/autoload': 'plug.vim',
+  '.config/nvim': 'coc-settings.json'
 }
 
 nested_files.each do |dir, file|
