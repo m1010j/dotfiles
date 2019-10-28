@@ -159,6 +159,8 @@ nnoremap <Leader>t :tabnew<CR>
 nnoremap <Leader>x :tabclose<CR>
 nnoremap <Leader>[ :tabp<CR>
 nnoremap <Leader>] :tabn<CR>
+nnoremap <Leader>{ :tabm -1<CR>
+nnoremap <Leader>} :tabm +1<CR>
 
 " Move back and forth between two files by pressing the leader key twice
 nnoremap <Leader><Leader> :e#<CR>
