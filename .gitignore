@@ -41,7 +41,6 @@ Temporary Items
 
 *.gem
 *.rbc
-/.config
 /coverage/
 /InstalledFiles
 /pkg/

@@ -8,15 +8,15 @@ files.each do |file_or_dir|
   %x[ #{cmd} ]
 end
 
-nested_files = {
-  '.config/karabiner': 'karabiner.json',
-  '.config/nvim': 'init.vim',
-  '.vim': 'vimrc',
-  '.vim/autoload': 'plug.vim',
-  '.config/nvim': 'coc-settings.json'
-}
+nested_files = [
+  ['.config/karabiner', 'karabiner.json'],
+  ['.vim', 'vimrc'],
+  ['.vim/autoload', 'plug.vim'],
+  ['.config/nvim', 'coc-settings.json']
+]
 
-nested_files.each do |dir, file|
+nested_files.each do |item|
+  dir, file = item
   cmd = "mkdir -p #{dir} && cp ~/#{dir}/#{file} #{dir}"
   %x[ #{cmd} ]
 end
