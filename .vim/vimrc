@@ -141,10 +141,12 @@ nnoremap <Leader>} :tabm +1<CR>
 " Move back and forth between two files by pressing the leader key twice
 nnoremap <Leader><Leader> :e#<CR>
 
-" Console log 20 new lines below current line
-nnoremap <Leader>l oconsole.log('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n')<Esc>0
-" Console log 20 new lines above current line
-nnoremap <Leader>L Oconsole.log('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n')<Esc>0
+" Console log 20 new lines twice below current line and put cursor between
+" lines in insert mode in a new console log
+nnoremap <Leader>l oconsole.log('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n')<Esc>oconsole.log('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n')<Esc>Oconsole.log()<Esc>i
+" Console log 20 new lines twice above current line and put cursor between
+" lines in insert mode in a new console log
+nnoremap <Leader>L Oconsole.log('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n')<Esc>oconsole.log('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n')<Esc>Oconsole.log()<Esc>i
 
 " Show matching parentheses
 set showmatch
