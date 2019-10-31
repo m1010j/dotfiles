@@ -28,6 +28,8 @@ call plug#begin()
 
   Plug 'vim-scripts/auto-pairs-gentle'
 
+  Plug 'tmux-plugins/vim-tmux-focus-events'
+
 call plug#end()
 
 let g:coc_global_extensions = ['coc-prettier', 'coc-tsserver', 'coc-tslint-plugin', 'coc-json', 'coc-highlight', 'coc-emmet', 'coc-css', 'coc-html']
