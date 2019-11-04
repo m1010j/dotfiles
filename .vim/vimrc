@@ -250,7 +250,7 @@ endfunction
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
 " Remap keys for gotos
-nmap <leader>d <Plug>(coc-definition)
+nmap <Leader>d :tab split<CR><Plug>(coc-definition)
 nmap <leader>y <Plug>(coc-type-definition)
 nmap <leader>i <Plug>(coc-implementation)
 nmap <leader>r <Plug>(coc-references)
