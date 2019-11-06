@@ -32,6 +32,8 @@ call plug#begin()
   
   Plug 'tpope/vim-surround'
 
+  Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+
 call plug#end()
 
 let g:coc_global_extensions = ['coc-prettier', 'coc-tsserver', 'coc-tslint-plugin', 'coc-json', 'coc-highlight', 'coc-emmet', 'coc-css', 'coc-html']
