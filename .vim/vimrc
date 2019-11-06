@@ -158,7 +158,7 @@ nnoremap <Leader>q :q<CR>
 
 " Tabbing shortcuts 
 nnoremap <Leader>t :tabnew<CR>
-nnoremap <Leader>x :tabclose<CR>
+nnoremap <Leader>x :bd<CR>
 nnoremap <Leader>[ :tabp<CR>
 nnoremap <Leader>] :tabn<CR>
 nnoremap <Leader>{ :tabm -1<CR>
