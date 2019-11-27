@@ -33,3 +33,4 @@ cmd + shift + alt - 6 : chunkc tiling::window --send-to-desktop 6
 cmd + shift + alt - r : brew services restart chunkwm
 ctrl - 1 -> : chunkc tiling::monitor -f $(chunkc tiling::query --monitor-for-desktop 1)
 ctrl - 2 -> : chunkc tiling::monitor -f $(chunkc tiling::query --monitor-for-desktop 2)
+ctrl - 3 -> : chunkc tiling::monitor -f $(chunkc tiling::query --monitor-for-desktop 3)
