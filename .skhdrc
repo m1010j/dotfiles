@@ -1,19 +1,19 @@
 # enter fullscreen mode for the focused container
-ctrl + cmd + alt - f : chunkc tiling::window --toggle fullscreen
+cmd + alt - f : chunkc tiling::window --toggle fullscreen
 # change focus between tiling / floating windows
 cmd + shift + alt - space : chunkc tiling::window --toggle float
 # change layout of desktop
-ctrl + cmd + alt - e : chunkc tiling::desktop --layout bsp
-ctrl + cmd + alt - s : chunkc tiling::desktop --layout monocle
+cmd + alt - e : chunkc tiling::desktop --layout bsp
+cmd + alt - s : chunkc tiling::desktop --layout monocle
 # kill focused window
 cmd + shift + alt - q : chunkc tiling::window --close
 # change focus
-ctrl + cmd + alt - h : chunkc tiling::window --focus west
-ctrl + cmd + alt - j : chunkc tiling::window --focus south
-ctrl + cmd + alt - k : chunkc tiling::window --focus north
-ctrl + cmd + alt - l : chunkc tiling::window --focus east
-ctrl + cmd + alt - p : chunkc tiling::window --focus prev
-ctrl + cmd + alt - n : chunkc tiling::window --focus next
+cmd + alt - h : chunkc tiling::window --focus west
+cmd + alt - j : chunkc tiling::window --focus south
+cmd + alt - k : chunkc tiling::window --focus north
+cmd + alt - l : chunkc tiling::window --focus east
+cmd + alt - p : chunkc tiling::window --focus prev
+cmd + alt - n : chunkc tiling::window --focus next
 # move focused window
 cmd + shift + alt - h : chunkc tiling::window --warp west
 cmd + shift + alt - j : chunkc tiling::window --warp south
