@@ -135,3 +135,4 @@ case "${unameOut}" in
 	Linux*)    eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 esac
 
+export PATH="/usr/local/opt/terraform@0.11/bin:$PATH"
