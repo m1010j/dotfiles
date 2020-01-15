@@ -33,6 +33,8 @@ call plug#begin()
   Plug 'tpope/vim-surround'
 
   Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+  
+  Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 
 call plug#end()
 
