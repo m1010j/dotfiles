@@ -1,8 +1,13 @@
+" Add a scroll offset of 5
+set scrolloff=5
+
 " Set leader key to space
 let mapleader=" "
 let maplocalleader=" "
 
 call plug#begin()
+
+  Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
@@ -34,8 +39,6 @@ call plug#begin()
 
   Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
   
-  Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
-
 call plug#end()
 
 let g:coc_global_extensions = ['coc-prettier', 'coc-tsserver', 'coc-tslint-plugin', 'coc-json', 'coc-highlight', 'coc-emmet', 'coc-css', 'coc-html']
@@ -49,7 +52,7 @@ let g:lightline = {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
       \ },
-      \ 'component_function': {
+        \ 'component_function': {
       \   'filename': 'LightlineFilename',
       \   'gitbranch': 'fugitive#head'
       \ },
