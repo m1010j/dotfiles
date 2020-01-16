@@ -136,3 +136,5 @@ case "${unameOut}" in
 esac
 
 export PATH="/usr/local/opt/terraform@0.11/bin:$PATH"
+
+export PATH=/usr/local/share/python:$PATH
