@@ -138,3 +138,8 @@ esac
 export PATH="/usr/local/opt/terraform@0.11/bin:$PATH"
 
 export PATH=/usr/local/share/python:$PATH
+
+export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH
+
+# added by travis gem
+[ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh
