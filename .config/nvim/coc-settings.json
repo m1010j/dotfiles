@@ -1,4 +1,14 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": ["css", "Markdown", "javascript", "javascriptreact", "typescript", "typescriptreact", "json", "graphql"]
+  "coc.preferences.formatOnSaveFiletypes": ["css", "Markdown", "javascript", "javascriptreact", "typescript", "typescriptreact", "json", "graphql"],
+  "codeLens.enable": true,
+  "importCost.typescriptExtensions": [
+    "\\.tsx?$"
+  ],
+  "importCost.javascriptExtensions": [
+    "\\.jsx?$"
+  ],
+  "importCost.bundleSizeDecoration": "both",
+  "importCost.showCalculatingDecoration": true,
+  "importCost.debug": false
 }
 
