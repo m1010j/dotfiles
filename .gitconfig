@@ -25,3 +25,4 @@
 	com = !git checkout master
   prl = !hub pr list
   prco = !hub pr checkout
+  diffchar = diff --word-diff=color --word-diff-regex=.

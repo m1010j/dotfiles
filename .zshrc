@@ -144,3 +144,5 @@ export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH
 # added by travis gem
 [ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+
+export git_main_branch=main
