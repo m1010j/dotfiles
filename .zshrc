@@ -146,3 +146,5 @@ export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
 export git_main_branch=main
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
