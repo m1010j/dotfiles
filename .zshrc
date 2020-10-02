@@ -3,11 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 unameOut="$(uname -s)"
-case "${unameOut}" in
-	Linux*)     export ZSH="/home/matthias/.oh-my-zsh";;
-	Darwin*)     export ZSH="/Users/matthiasjenny1/.oh-my-zsh";;
-	*)     echo "This only works on Linux or Mac"
-esac
+export ZSH="/home/matthiasjenny/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,

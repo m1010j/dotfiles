@@ -26,3 +26,5 @@
   prl = !hub pr list
   prco = !hub pr checkout
   diffchar = diff --word-diff=color --word-diff-regex=.
+[url "git@github.com:"]
+	insteadOf = https://github.com/
