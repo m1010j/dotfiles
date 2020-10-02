@@ -1,26 +1,53 @@
 #!/usr/bin/env ruby
 
+`sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+
+`git clone https://github.com/zsh-users/zsh-autosuggestions /home/matthiasjenny/.oh-my-zsh/custom/plugins/zsh-autosuggestions`
+
+`git clone https://github.com/zsh-users/zsh-syntax-highlighting.git /home/matthiasjenny/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting`
+
+`curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.36.0/install.sh | zsh`
+
+`source ~/.zshrc`
+
+`nvm install node`
+
+`sudo apt update`
+
+`sudo apt install neovim`
+
+`sudo apt install zsh`
+
+`sudo apt install rbenv`
+
+`sudo apt install hub`
+
+`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`
+
+`sudo apt-get install tmux`
+
 files_and_dirs = Dir.glob("*", File::FNM_DOTMATCH) - %w[. .. install .git 
   .DS_Store README.md update .config .vim]
 
 files_and_dirs.each do |file_or_dir|
   cmd = "cp -r ./#{file_or_dir} ~/"
-  %x[ #{cmd} ]
+  %x[ #{cmd}  ]
 end
 
 nested_files = [
   ['.config/karabiner', 'karabiner.json'],
-  ['.vim', 'vimrc'],
-  ['.vim/autoload', 'plug.vim'],
-  ['.config/nvim', 'coc-settings.json']
+    ['.vim', 'vimrc'],
+      ['.vim/autoload', 'plug.vim'],
+        ['.config/nvim', 'coc-settings.json']
+
 ]
 
 `mkdir -p ~/.vim/autoload ~/.config/karabiner ~/.config/nvim`
 
 nested_files.each do |item|
   dir, file = item
-  cmd = "cp #{dir}/#{file} ~/#{dir}"
-  %x[ #{cmd} ]
+    cmd = "cp #{dir}/#{file} ~/#{dir}"
+      %x[ #{cmd}  ]
 end
 
 # Create symlink for vimrc
@@ -33,3 +60,5 @@ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
 # Install requirements for nvim-typescript
 `npm install -g neovim`
 `npm -g install typescript`
+
+`source ~/.zshrc`
