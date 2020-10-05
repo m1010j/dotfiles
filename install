@@ -1,43 +1,5 @@
 #!/usr/bin/env ruby
 
-`sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
-
-`git clone https://github.com/zsh-users/zsh-autosuggestions /home/matthiasjenny/.oh-my-zsh/custom/plugins/zsh-autosuggestions`
-
-`git clone https://github.com/zsh-users/zsh-syntax-highlighting.git /home/matthiasjenny/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting`
-
-`curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.36.0/install.sh | zsh`
-
-`source ~/.zshrc`
-
-`nvm install node`
-
-`sudo apt update`
-
-`sudo apt install neovim`
-
-`sudo apt install zsh`
-
-`sudo apt install rbenv`
-
-`sudo apt install hub`
-
-`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`
-
-`sudo apt-get install tmux`
-
-`git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
-
-`brew install fzf`
-
-`$(brew --prefix)/opt/fzf/install`
-
-`brew install the_silver_surfer`
-
-`curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -`
-`echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list`
-`sudo apt update && sudo apt install yarn`
-
 files_and_dirs = Dir.glob("*", File::FNM_DOTMATCH) - %w[. .. install .git 
   .DS_Store README.md update .config .vim]
 
