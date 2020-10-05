@@ -28,6 +28,10 @@
 
 `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
 
+`brew install fzf`
+
+`$(brew --prefix)/opt/fzf/install`
+
 files_and_dirs = Dir.glob("*", File::FNM_DOTMATCH) - %w[. .. install .git 
   .DS_Store README.md update .config .vim]
 
