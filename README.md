@@ -18,7 +18,8 @@ sudo apt install hub
 sudo apt-get install tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 sudo apt-get install fzf
-apt-get install silversearcher-ag```
+apt-get install silversearcher-ag
+```
 
 #### Installation
 
