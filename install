@@ -32,6 +32,8 @@
 
 `$(brew --prefix)/opt/fzf/install`
 
+`brew install the_silver_surfer`
+
 files_and_dirs = Dir.glob("*", File::FNM_DOTMATCH) - %w[. .. install .git 
   .DS_Store README.md update .config .vim]
 
