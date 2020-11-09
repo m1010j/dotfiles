@@ -45,7 +45,7 @@ call plug#begin()
   
 call plug#end()
 
-let g:coc_global_extensions = ['coc-prettier', 'coc-tsserver', 'coc-tslint-plugin', 'coc-json', 'coc-highlight', 'coc-emmet', 'coc-css', 'coc-html', 'coc-import-cost']
+let g:coc_global_extensions = ['coc-prettier', 'coc-tsserver', 'coc-tslint-plugin', 'coc-json', 'coc-highlight', 'coc-emmet', 'coc-css', 'coc-html']
 
 " Lightline config
 set laststatus=2
