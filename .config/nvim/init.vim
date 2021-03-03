@@ -27,6 +27,10 @@ call plug#begin()
   Plug 'powerman/vim-plugin-autosess'
 
   Plug 'vim-scripts/auto-pairs-gentle'
+  
+  Plug 'mitsuhiko/vim-jinja'
+
+  Plug 'pearofducks/ansible-vim'
 
 call plug#end()
 
