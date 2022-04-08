@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+
+files = Dir.glob("*", File::FNM_DOTMATCH) - %w[. .. install .git 
+  .DS_Store Library README.md update .config .vim]
+
+files.each do |file_or_dir|
+  cmd = "cp -r ~/#{file_or_dir} ."
+  %x[ #{cmd} ]
+end
+
+nested_files = [
+  ['.config/karabiner', 'karabiner.json'],
+  ['.vim', 'vimrc'],
+  ['.vim/autoload', 'plug.vim'],
+  ['.config/nvim', 'coc-settings.json']
+]
+
+nested_files.each do |item|
+  dir, file = item
+  cmd = "mkdir -p #{dir} && cp ~/#{dir}/#{file} #{dir}"
+  %x[ #{cmd} ]
+end
+
+
