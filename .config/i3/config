@@ -188,3 +188,8 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+# Switch to CH keyboard layout
+bindsym $mod+c exec "setxkbmap -model pc105 -layout ch"
+# Switch to US keyboard layout
+bindsym $mod+u exec "setxkbmap -model pc105 -layout us"
