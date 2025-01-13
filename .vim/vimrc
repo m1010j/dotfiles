@@ -1,3 +1,5 @@
+let g:coc_disable_startup_warning = 1
+
 " Add a scroll offset of 5
 set scrolloff=5
 
@@ -46,10 +48,10 @@ call plug#begin()
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
   Plug 'junegunn/fzf.vim'
-  
+    
 call plug#end()
 
-let g:coc_global_extensions = ['coc-prettier', 'coc-tsserver', 'coc-tslint-plugin', 'coc-json', 'coc-highlight', 'coc-emmet', 'coc-css', 'coc-html', 'coc-spell-checker']
+let g:coc_global_extensions = ['coc-prettier', 'coc-tsserver', 'coc-eslint', 'coc-json', 'coc-highlight', 'coc-css', 'coc-html', 'coc-spell-checker']
 
 " Lightline config
 set laststatus=2
@@ -180,13 +182,6 @@ nnoremap <Leader>} :tabm +1<CR>
 " Move back and forth between two files by pressing the leader key twice
 nnoremap <Leader><Leader> :e#<CR>
 
-" Console log 20 new lines twice below current line and put cursor between
-" lines in insert mode in a new console log
-nnoremap <Leader>l oconsole.log('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n')<Esc>oconsole.log('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n')<Esc>Oconsole.log()<Esc>i
-" Console log 20 new lines twice above current line and put cursor between
-" lines in insert mode in a new console log
-nnoremap <Leader>L Oconsole.log('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n')<Esc>oconsole.log('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n')<Esc>Oconsole.log()<Esc>i
-
 " Show matching parentheses
 set showmatch
 
@@ -284,3 +279,4 @@ endif
 
 " sudo write with w!!
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
+
